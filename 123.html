@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>用户注册页面</title>
+ <meta charset="charset"/>
+ <style type="text/css">
+ 
+ *{margin:0px;padding:0px;}
+ ul{
+  width:400px;
+  list-style:none;
+  margin:50px auto;
+ }
+ li{
+  padding:12px;
+  position:relative;
+ }
+ label{
+  width:80px;
+  display:inline-block;
+  /* float:left; */
+  line-height:30px;
+ }
+ input[type='text'],input[type='password']{
+  height:30px;
+ }
+ img{
+  margin-left:10px;
+ }
+ input[type="submit"]{
+  margin-left:80px;
+  padding:5px 10px;
+ }
+ .row{
+    border: 1px solid #f00;
+ }
+ </style>
+ <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-1">header</div>
+       
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <form action="zhuce.php" method="post">
+                <ul>
+                <li>
+                 <label>name：</label>
+                 <input type="text" name="username" placeholder="Please enter your name"/>
+                </li>
+                <li>
+                 <label>Password：</label>
+                 <input type="password" name="password" placeholder="Please enter your password" />
+                </li>
+                <li>
+                 <label>Confirm password</label>
+                 <input type="password" name="confirm" placeholder="Please enter your password" />
+                </li>
+                <li>
+                  <label>Gender</label>
+                  <input type="radio" id='male' name='sex' value='male'>male
+                  <input type="radio" id='female' name='sex' value='female'>female
+                </li>
+                <li>
+                 <label>email：</label>
+                 <input type="text" name="email" placeholder="Please enter your email"/>
+                </li>
+                <li>
+                 <input type="submit" value="submit" />
+                </li>
+                </ul>
+               </form>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-5">concession management</div>
+        <div class="col-md-4 col-md-offset-8">class calender</div>
+        
+      </div>
+    
+    <div>
+
+</div>
+
+</body>
+</html>
